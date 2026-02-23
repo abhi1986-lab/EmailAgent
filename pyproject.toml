@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "email-agent"
+version = "0.2.0"
+description = "Reusable agent for scheduling context-aware outbound emails"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+email-agent = "email_agent.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
